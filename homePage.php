@@ -4,6 +4,7 @@
 	<title>451 Fitness Tracker</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -11,9 +12,9 @@
 		<h1>451 Fitness Tracker</h1>
 		<nav>
 			<ul>
-                <li><a href="homePage.php">Home</a></li>
-				<li><a href="#">Update</a></li>
-				<li><a href="view.php">View</a></li>
+            <li><a href="homePage.php">Home</a></li>
+				<li><a href="#">Log New Fitness Data</a></li>
+				<li><a href="view.php">View Exisiting Data</a></li>
 			</ul>
 		</nav>
 	</header>
