@@ -7,24 +7,52 @@
     
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+<style>
+	input[type=text] {
+		padding: 5px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-sizing: border-box;
+		margin-bottom: 10px;
+		width: 100%;
+	}
+	input[type=submit] {
+		background-color: #333;
+		color: white;
+		border: none;
+		padding: 10px 20px;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+	input[type=submit]:hover {
+		background-color: #555;
+	}
+	button[type='submit']{
+		background-color: #333;
+		color: white;
+		border: none;
+		padding: 10px 20px;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+</style>
 <body>
 <header>
-	<h1>451 Fitness Tracker</h1>
-	<nav>
-		<ul>
-			<li><a href="homePage.php">Home</a></li>
-			<li><a href="#">Log New Fitness Data</a></li>
-			<li><a href="edit.php">Edit Exisiting Data</a></li>
-		</ul>
-	</nav>
-</header>
+		<h1>451 Fitness Tracker</h1>
+		<nav>
+			<ul>
+				<li><a href="homePage.php">Home</a></li>
+				<li><a href="#">Log New Fitness Data</a></li>
+				<li><a href="edit.php">Edit Exisiting Data</a></li>
+			</ul>
+		</nav>
+	</header>
 
-    <form method="post" type="dropdown"style="border: 1px solid #ddd; padding: 20px; border-radius: 10px;">
+    <form class="edit" method="post" type="dropdown" style="border: 1px solid #ddd; padding: 20px; border-radius: 10px;">
     <select name="table" style="padding: 10px; font-size: 16px; border: none; background-color: #f7f7f7; border-radius: 5px;">
         <option value="" disabled selected>Select a table</option>
         <?php
         // Connect to database
-        //$con = mysqli_connect("ix.cs.uoregon.edu", "final_guest", "password","workout", "3561");
         $con = mysqli_connect("ix.cs.uoregon.edu", "final_guest", "password", "workout", "3286");
 
         // Get list of tables from database
