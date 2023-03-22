@@ -8,16 +8,16 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<header>
-		<h1>451 Fitness Tracker</h1>
-		<nav>
-			<ul>
-            <li><a href="homePage.php">Home</a></li>
-				<li><a href="#">Log New Fitness Data</a></li>
-				<li><a href="view.php">View Exisiting Data</a></li>
-			</ul>
-		</nav>
-	</header>
+<header>
+	<h1>451 Fitness Tracker</h1>
+	<nav>
+		<ul>
+			<li><a href="homePage.php">Home</a></li>
+			<li><a href="#">Log New Fitness Data</a></li>
+			<li><a href="edit.php">Edit Exisiting Data</a></li>
+		</ul>
+	</nav>
+</header>
 
     <form method="post" type="dropdown"style="border: 1px solid #ddd; padding: 20px; border-radius: 10px;">
     <select name="table" style="padding: 10px; font-size: 16px; border: none; background-color: #f7f7f7; border-radius: 5px;">

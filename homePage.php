@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
 	<title>451 Fitness Tracker</title>
 	<meta charset="UTF-8">
@@ -12,17 +12,55 @@
 		<h1>451 Fitness Tracker</h1>
 		<nav>
 			<ul>
-            <li><a href="homePage.php">Home</a></li>
+				<li><a href="homePage.php">Home</a></li>
 				<li><a href="#">Log New Fitness Data</a></li>
-				<li><a href="view.php">View Exisiting Data</a></li>
+				<li><a href="edit.php">Edit Exisiting Data</a></li>
 			</ul>
 		</nav>
 	</header>
 	
-	<section>
-		<h2>About 451 Fitness Tracker</h2>
-		<p>451 Fitness Tracker is a modern and easy-to-use application that helps you track your fitness progress. Whether you want to lose weight, build muscle or simply stay healthy, our app has everything you need to reach your fitness goals.</p>
-	</section>
-	
+	<div class="inner">
+		<!--
+		Sidebar
+		-->
+		<div id="sidebar">
+			<h2>About 451 Fitness Tracker</h2>
+			<p>
+				451 Fitness Tracker is a easy-to-use application that helps you track 
+				your fitness progress. Whether you want to lose weight, build muscle or simply 
+				stay healthy, our app has everything you need to reach your fitness goals.
+			</p>
+			<!-- <hr class="divider"> Optional if we want to add more after About -->
+		</div> <!-- End of Side Bar -->
+
+		<!--
+		Safe sleeping site content
+		-->
+		<div id="content">
+			<h2>Applications</h2>
+			<ol>
+				<li>View Users Completed Exercises</li>
+				<p>php script here</p>
+				<li>View all exercises in a Specified class</li>
+				<p>php script here</p>
+				<li>View a specific exercise</li>
+				<p>php script here</p>
+				<li>View who holds the max weight for a specific exercise</li>
+				<p>php script here</p>
+				<li>View Users Goals</li>
+				<p>php script here</p>
+				<li>View how close User is to their personal goal weight</li>
+				<p>php script here</p>
+				<li>View how close User is to their goal reps and weight</li>
+				<p>php script here</p>
+				<li>View sum of daily food intake</li>
+				<p>php script here</p>
+				<li>View how close user is to goal daily food intake</li>
+				<p>php script here</p>
+				<li>View specific users Max lifts</li>
+				<p>php script here</p>
+			</ol>
+		</div> <!-- End of content-->
+	</div> <!-- End of Inner -->
 </body>
 </html>
