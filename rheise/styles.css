@@ -1,0 +1,112 @@
+body {
+  font-family: 'Roboto Slab', serif;
+  border-style: solid;
+}
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+h1 {
+  margin: 0;
+}
+
+header a{
+  text-decoration: none;
+  color: #ffffff;
+}
+main {
+  margin: 30px;
+  text-align: center;
+}
+header a:hover {
+  border-bottom: 1px solid white;
+}
+form[type='edit'] {
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px grey;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input[type=text] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  width: 100%;
+}
+input[type=submit] {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #555;
+}
+button[type='submit']{
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form {
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px grey;
+  justify-content: center;
+  margin-top: 50px;
+  display: flex;
+  width: 50%; /* Set a fixed width */
+  margin: 20px auto 20px; /* Center the form horizontally and add margin to the top */
+}
+
+table {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Displays the inner content as a row with no margins or padding. */
+.inner {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar h2, p {
+  margin: 15px;
+}
+
+/* Defines the styling of a sidebar element, setting its width, background color, and padding. */
+#sidebar {
+  width: 300px;
+  background-color: #f1f1f1;
+  padding-bottom: 15px;
+}
+
+/* setting flex property and padding. */
+#content {
+  flex: 1;
+  margin-left: 10px;
+}
