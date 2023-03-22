@@ -10,7 +10,13 @@
 <body>
 	<header>
 		<h1>451 Fitness Tracker</h1>
-		<a href="homePage.php">Home</a>
+		<nav>
+			<ul>
+				<li><a href="homePage.php">Home</a></li>
+				<li><a href="#">Log New Fitness Data</a></li>
+				<li><a href="edit.php">Edit Exisiting Data</a></li>
+			</ul>
+		</nav>
 	</header>
 	
 	<main>

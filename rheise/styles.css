@@ -110,3 +110,20 @@ table {
   flex: 1;
   margin-left: 10px;
 }
+
+.sidebar h2 {
+  text-align: center;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 10px;
+  border-bottom: 3px solid #333;
+}
