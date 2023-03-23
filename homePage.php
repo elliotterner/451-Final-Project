@@ -48,29 +48,80 @@
 			<h2>Applications</h2>
 			<ol>
 				<li>View Users Completed Exercises</li>
-				<form action="view_user_exercises.php" method="GET">
-					<label class="queries" for="name">Enter a name:</label>
-					<input type="text" name="name" id="name">
+				<form action="query1.php" method="GET">
+					<p><label class="queries" for="name">Enter a name (ie John Doe):</label>
+					<input type="text" name="name" id="name"></p>
 					<button type="submit" style="margin-bottom:20px;">Submit</button>
 				</form>
+
 				<li>View all exercises in a Specified class</li>
-				<p>php script here</p>
+				<form action="query2.php" method="GET">
+					<p><label class="queries" for="w_class">Enter Workout Class (ie Upper Body):</label>
+					<input type="text" name="w_class" id="w_class"></p>
+					<button type="submit" style="margin-bottom:20px;">Submit</button>
+				</form>
+
 				<li>View a specific exercise</li>
-				<p>php script here</p>
+				<form action="query3.php" method="GET">
+					<p><label class="queries" for="name">Enter a name (ie David Brown):</label>
+					<input type="text" name="name" id="name"></p>
+					<p><label class="queries" for="e_name">Enter Exercise Name (ie Leg Press):</label>
+					<input type="text" name="e_name" id="e_name"></p>
+					<button type="submit" style="margin-bottom:20px;">Submit</button>
+				</form>
+
 				<li>View who holds the max weight for a specific exercise</li>
-				<p>php script here</p>
+				<form action="query4.php" method="GET">
+					<p><label class="queries" for="e_name">Enter Workout Name (ie Leg Press):</label>
+					<input type="text" name="e_name" id="e_name"></p>
+					<button type="submit" style="margin-bottom:20px;">Submit</button>
+				</form>
+
 				<li>View Users Goals</li>
-				<p>php script here</p>
+				<form action="query5.php" method="GET">
+					<p><label class="queries" for="name">Enter a Name (ie John Doe):</label>
+					<input type="text" name="name" id="name"></p>
+					<button type="submit" style="margin-bottom:20px;">Submit</button>
+				</form>
+
 				<li>View how close User is to their personal goal weight</li>
-				<p>php script here</p>
+				<form action="query6.php" method="GET">
+					<p><label class="queries" for="name">Enter a Name (ie John Doe):</label>
+					<input type="text" name="name" id="name"></p>
+					<button type="submit" style="margin-bottom:20px;">Submit</button>
+				</form>
+
 				<li>View how close User is to their goal reps and weight</li>
-				<p>php script here</p>
+				<form action="query7.php" method="GET">
+					<p><label class="queries" for="name">Enter a Name (ie Ethan Rivera):</label>
+					<input type="text" name="name" id="name"></p>
+					<button type="submit" style="margin-bottom:20px;">Submit</button>
+				</form>
+
 				<li>View sum of daily food intake</li>
-				<p>php script here</p>
+				<form action="query8.php" method="GET">
+					<p><label class="queries" for="name">Enter a Name (ie John Doe):</label>
+					<input type="text" name="name" id="name"></p>
+					<p><label class="queries" for="date">Enter Date (ie 2023-03-21):</label>
+					<input type="text" name="date" id="date"></p>
+					<button type="submit" style="margin-bottom:20px;">Submit</button>
+				</form>
+
 				<li>View how close user is to goal daily food intake</li>
-				<p>php script here</p>
+				<form action="query9.php" method="GET">
+					<p><label class="queries" for="name">Enter a Name (ie John Doe):</label>
+					<input type="text" name="name" id="name"></p>
+					<p><label class="queries" for="date">Enter Date (ie 2023-03-21):</label>
+					<input type="text" name="date" id="date"></p>
+					<button type="submit" style="margin-bottom:20px;">Submit</button>
+				</form>
+
 				<li>View specific users Max lifts</li>
-				<p>php script here</p>
+				<form action="query10.php" method="GET">
+					<p><label class="queries" for="name">Enter a Name (ie John Doe):</label>
+					<input type="text" name="name" id="name"></p>
+					<button type="submit" style="margin-bottom:20px;">Submit</button>
+				</form>
 			</ol>
 		</div> <!-- End of content-->
 	</div> <!-- End of Inner -->
