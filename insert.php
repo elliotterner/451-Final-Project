@@ -48,6 +48,10 @@
 	// Check if form has been submitted
 	if (isset($_POST['table'])) {
 		// Get selected table from form data
+
+        ?>
+        <p style="text-align:center;">Please make sure to add a valid ID number associated with your new entry</p>
+        <?php
 		$table = $_POST['table'];
 
 		// Connect to database
@@ -67,38 +71,16 @@
 			$columns[] = $row['COLUMN_NAME'];
 		}
 
-		// Build query using selected table and column names
-		$query = "SELECT * FROM $table";
-
-		// Execute query and display results
-		$result = mysqli_query($con, $query);
-
-		// Display column names at the top in a table
-		echo "<table>";
-		echo "<thead>";
-		echo "<tr>";
-		foreach ($columns as $column) {
-			echo "<th>$column</th>";
-		}
-		echo "<th>Edit</th>";
-		echo "</tr>";
-		echo "</thead>";
-
-		// Display row data below column names in a table
-		echo "<tbody>";
-		while ($row = mysqli_fetch_array($result)) {
-			echo "<tr>";
-			foreach ($columns as $column) {
-				echo "<td>" . $row[$column] . "</td>";
-			}
-			echo '<td><a href="editDB.php?table=' . $table . '&Getid=' . $row[0] . '">Edit</a></td>';
-			echo "</tr>";
-		}
-		echo "</tbody>";
-		echo "</table>";
-
-		// Close database connection
-		mysqli_close($con);
+        	//create form with input fields for each column
+        echo "<form type='edit' action='insertComplete.php?Gettable=$table' method='POST' style = 'display: block;
+        margin: auto;'>";
+        for($i = 0; $i < count($columns); $i++) {
+            $column_name = $columns[$i];
+            echo "<label for='$column_name'>$column_name:</label><br>";
+            echo "<input type='text' id='$column_name' name='$column_name'><br><br>";
+        }
+        echo "<button type='submit' name='update'>Update</button>";
+        echo "</form>";
 	}
 	?>
 </body>
