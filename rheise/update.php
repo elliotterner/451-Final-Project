@@ -23,6 +23,6 @@ if(isset($_POST['update'])) {
 //close database connection
 mysqli_close($con);
 
-header("location:view.php");
+header("location:edit.php");
 ?>
 
