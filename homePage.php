@@ -30,7 +30,15 @@
 				your fitness progress. Whether you want to lose weight, build muscle or simply 
 				stay healthy, our app has everything you need to reach your fitness goals.
 			</p>
-			<!-- <hr class="divider"> Optional if we want to add more after About -->
+			
+			<hr class="divider">
+
+			<p>
+			<a href="homePage.txt" >Contents</a> of the PHP page that 
+			gets called.
+			(And the <a href="connectionData.txt" >connection data</a>,
+			kept separately for security reasons.)
+			</p>
 		</div> <!-- End of Side Bar -->
 
 		<!--
@@ -40,7 +48,11 @@
 			<h2>Applications</h2>
 			<ol>
 				<li>View Users Completed Exercises</li>
-				<p>php script here</p>
+				<form action="view_user_exercises.php" method="GET">
+					<label class="queries" for="name">Enter a name:</label>
+					<input type="text" name="name" id="name">
+					<button type="submit" style="margin-bottom:20px;">Submit</button>
+				</form>
 				<li>View all exercises in a Specified class</li>
 				<p>php script here</p>
 				<li>View a specific exercise</li>

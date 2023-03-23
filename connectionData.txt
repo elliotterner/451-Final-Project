@@ -1,0 +1,7 @@
+<?php
+$server = "ix.cs.uoregon.edu";
+$user = "final_guest";
+$pass = "password";
+$dbname ="workout";
+$port = "3286";
+?>
