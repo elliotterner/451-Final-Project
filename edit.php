@@ -19,6 +19,9 @@
 	</nav>
 </header>
 
+<p>Contents of all files associated with view/ edit functionality: <a href="edit.txt">edit.txt</a>, <a href="editDB.txt">editDB.txt</a> and <a href="update.txt">update.txt</a></p>
+
+
     <form method="post" type="dropdown"style="border: 1px solid #ddd; padding: 20px; border-radius: 10px;">
     <select name="table" style="padding: 10px; font-size: 16px; border: none; background-color: #f7f7f7; border-radius: 5px;">
         <option value="" disabled selected>Select a table</option>
